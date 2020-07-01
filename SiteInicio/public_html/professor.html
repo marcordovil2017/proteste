@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>ESCOLAR - Siatema Acadêmico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+         </head>
+    <body>
+        
+            <div id="formCad">
+                
+                <form name="formprof" >
+                
+                    
+                    <p>
+                       <h2>Cadastro de Professor </h2>
+                   
+                   <fieldset>
+                   <legend>Dados Pessoais </legend>                   
+                    <p align="left">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nomeid" placeholder="nome" required="required" name="nome" size="70" maxlength="70" />
+                    
+                     <p align="left"> 
+                        <label for="genero">Genero(M/F):</label>
+                        <select name="genero">
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>
+                    </p>
+                    
+                    <p align="left">
+                        <label for="dtnasc">RG:</label>
+                        <input id="rg" name="rg" size="20">     
+                    </p>
+                    
+                  <p align="left">
+                        <label for="cpf">CPF:)</label>
+                        <input type="text" name="cpf" placeholder="999.999.999-99" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" size="18">
+                  </p>  
+                    
+                    
+                     <p align="left">
+                        <label for="dtnasc">Data de Nascimento:</label>
+                        <input id="dtnasc" name="dtnasc" min="2017-06-01" max="2017-12-31" type="date">     
+                    </p>
+                    
+                               
+                <p align="left">
+                        <label for="estciv">Estado Civil:</label>
+                         <select name="estciv" >
+                            <option value="01">Solteiro</option>
+                            <option value="02">Casado</option>
+                            <option value="03">Separado</option>
+                            <option value="01">Divorciado</option>
+                            <option value="02">Viuvo</option>
+                            <option value="02">Outros</option>
+                         
+                        </select>
+                       
+                        <p align="left">
+                         <label for="foneid">Celular</label>
+                        <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" size="20" maxlength="20"/>
+                       
+
+                    </p>
+                  <p align="left">
+                         <label for="emailid">Email:</label>
+                        <input type="email" id="emailid" placeholder="aluno@xxxxxx.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  name="email" size="80" maxlength="80"/>
+                         
+                        </legend>
+                        
+                        
+                    <fieldset>
+                   <legend>Dados Endereço </legend>  
+                     
+                       <p align="left">
+                        <label for="ufend">Estado:</label>
+                         <select name="ufend" >
+                             <option value="PA" selected="">Pará</option>
+                            <option value="AP">Amapá</option>
+                            <option value="RR">Roraima</option>
+                            <option value="RN">Rondônia</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="MA">Maranhão</option>
+                           </select>   
+                         
+                         
+                      <p align="left">
+                        <label for="nomeid">Endereço:</label>
+                        <input type="text" id="nomeid" placeholder="endereço" required="required" name="nome" size="80" maxlength="80"/>
+                     </p>
+                    
+                  <p align="left">
+                        <label for="coordmaps">Coordenadas Google Maps</label>
+                        <textarea  id="coordmaps"   rows="3"  cols="70" placeholder="link google maps"></textarea>
+                        </p>
+                    
+               </fieldset>   
+                   
+                          <fieldset>
+                   <legend>Dados de Formação </legend>  
+                   
+                   <p align="center">
+                        <label for="formacaoniv">Curso de Formação:</label>
+                         <select name="formacaoniv" >
+                            <option value="01">Biologia</option>
+                            <option value="01">Informática</option>
+                            <option value="02">Português</option>
+                            <option value="03">Matemática</option>
+                            <option value="01">Geografia</option>
+                            <option value="02">História</option>
+                            <option value="02">Pedagogia</option>
+                     </select>
+                
+                   <p align="center">
+                        <label for="formacaoniv">Nível Formação:</label>
+                         <select name="formacaoniv" >
+                            <option value="01">Nível Médio</option>
+                           <option value="01">Mágistério Médio</option>
+                            <option value="02">Graduação</option>
+                            <option value="03">especialização</option>
+                            <option value="01">Mestrado</option>
+                            <option value="02">Doutorado</option>
+                            <option value="02">Pós Doutorado</option>
+                     </select>
+                    
+                    
+                   <p>
+                        <h3>Observações sobre o professor</h3>
+                        <textarea  id="obsprof" rows="3"  cols="70" placeholder="Informe observações"></textarea>
+                   
+                    <p>
+                        <input type="submit" onclick="Enviar();" value="Enviar" />
+
+                        <input type="reset" value="Cancelar" /> 
+                        
+                    </p>
+                   </fieldset>   
+                </form>
+            </div>
+        
+    </body>
+</html>

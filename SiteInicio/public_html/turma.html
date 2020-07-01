@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>ESCOLAR - Siatema Acadêmico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+         </head>
+    <body>
+        
+            <div id="formturma">
+                
+                <form name="meu_form" >
+                     <br>
+                       <h2>Cadastro Turma </h2>
+                       <br>
+                     
+                     <fieldset>
+                   <legend>Dados da Turma </legend>                        
+                     <p align="center">
+                        <label for="sigla">Sigla:</label>
+                        <input type="text" id="sigla" placeholder="sigla" required="required" name="sigla" size="15" maxlength="15" />
+                      </p>
+                      
+                        <p align="center">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="nome" required="required" name="nome" size="70" maxlength="70" />
+                      </p>
+                      
+                      <p align="center">
+                      <label for="turno">Turno:</label>
+                         <select name="turno" >
+                            <option value="M">manhã</option>
+                           <option value="T">tarde</option>
+                            <option value="N">noite</option>
+                          </select>
+                      
+                     </p>
+                         
+                         <p align="center">
+                        <label for="anoser">Ano /Série</label>
+                        <select name="anoser" >
+                            <option value="01">Creche</option>
+                            <option value="02">Pré-Eescola</option>
+                            <option value="03">Ensino Fundamenmtal 1o. Ano</option>
+                            <option value="01">Ensino Fundamenmtal 2o. Ano</option>
+                            <option value="02">Ensino Fundamenmtal 3o. Ano</option>
+                            <option value="02">Ensino Fundamenmtal 4o. Ano</option>
+                            <option value="02">Ensino Fundamenmtal 5o. Ano</option>
+                            <option value="03">Ensino Fundamenmtal 6o. Ano</option>
+                            <option value="01">Ensino Fundamenmtal 7o. Ano</option>
+                            <option value="02">Ensino Fundamenmtal 8o. Ano</option>
+                            <option value="02">Ensino Fundamenmtal 9o. Ano</option>
+                            <option value="02">Ensino Médio 1o.  Ano</option>
+                            <option value="02">Ensino Médio 2o.  Ano</option> 
+                            <option value="02">Ensino Médio 3o.  Ano</option>
+                            
+                                
+                        </select>
+                        
+                         </p>
+                         
+                           <p align="center">
+                        <label for="idmodal">Curso / Modalidade Ensino</label>
+                        <select name="idmodal" >
+                            <option value="03">EJA Ensino Médio</option>
+                            <option value="01">EJA Ensino Fundamental  Anos Iniciais</option>
+                            <option value="02">EJA Ensino Fundamental  Anos Finais</option>
+                            <option value="02">Educação Especial Creche</option>
+                            <option value="02">Educação Especial Pré-escola</option>
+                            <option value="02">Educação Especial Ensino Fund. Anos Iniciais</option> 
+                            <option value="02">Educação  Especial Ensino Fund. Anos Finais</option>
+                            <option value="02">Educação Especial Ensino Médio</option>
+                            <option value="02">Educação Infantil</option> 
+                            
+                            
+                            
+                        </select>
+                        
+                         </p>
+                         
+                         
+                         <p>
+                             <br>
+                        <input type="submit" onclick="Enviar();" value="Enviar" />
+
+                        <input type="reset" value="Cancelar" /> 
+                        
+                    </p>
+
+                </form>
+            </fieldset>
+            </div>
+        
+    </body>
+</html>

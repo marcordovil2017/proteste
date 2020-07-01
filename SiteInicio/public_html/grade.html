@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>ESCOLAR - Siatema Acadêmico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+         </head>
+    <body>
+        
+            <div id="formturmalu">
+                
+                <form name="meu_form" >
+                     <br>
+                       <h2>Alocação de Professor em Turma</h2>
+                       <br>
+                     <p align="center">
+                        <label for="idprof">Professor:</label>
+                         <select name="idprof" >
+                            <option value="01">Antonio Carlos</option>
+                            <option value="02">Beatriz Moura</option>
+                            <option value="03">Carlos Silva</option>
+                            <option value="01">Eduardo Medeiros</option>
+                            <option value="02">Marco Antonio</option>
+                            <option value="02">Zózimo</option>
+                           
+                        </select>
+                        
+                  <p align="center">
+                        <label for="codturma">Turma:</label>
+                         <select name="codturma" >
+                            <option value="01">Tma001</option>
+                            <option value="02">Tma002</option>
+                            <option value="03">Tma003</option>
+                            <option value="01">Tta001</option>
+                            <option value="02">Tta002</option>
+                            <option value="02">Tno001</option>
+                            <option value="02">Tno002</option>
+                        </select>
+                     
+                      <p align="center">
+                        <label for="iddisc">Disciplina:</label>
+                         <select name="iddisc" >
+                            <option value="01">Biologia</option>
+                            <option value="02">Português</option>
+                            <option value="03">Geografia</option>
+                            <option value="01">História</option>
+                            <option value="02">Ingles</option>
+                            <option value="02">Informática</option>
+                           
+                        </select>  
+                          
+                       <p align="center"> 
+                         <fieldset>
+                   <legend>Aulas: Marque os Dias na Semana </legend>
+                        <input type="checkbox" name="dia" value="seg" />Segunda<br/>
+                        <input type="checkbox" name="dia" value="ter" />Terça<br/>
+                        <input type="checkbox" name="dia" value="quar" />Quarta<br/>
+                        <input type="checkbox" name="dia" value="qui" />Quinta<br/>
+                        <input type="checkbox" name="dia" value="sex" />Sexta<br/>
+                        <input type="checkbox" name="dia" value="sab" />Sabado<br/>
+                    </fieldset>
+               
+                          <p>
+                        <h3>Observações sobre alocação do professor </h3>
+                        <textarea  id="obsaloc" maxlength="300" placeholder="Informe observações"></textarea>
+                                     <p>
+                        <input type="submit" onclick="Enviar();" value="Enviar" />
+
+                        <input type="reset" value="Cancelar" /> 
+                        
+                    </p>
+
+                </form>
+            </div>
+        
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>ESCOLAR - Siatema Acadêmico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+         </head>
+    <body>
+        
+            <div id="formCad">
+                
+                <form name="formrub" >
+                     <br>
+                       <h2>Cadastro Rubrica Financeira </h2>
+                       <br>
+                  <fieldset>
+                   <legend>Dados da Rubrica </legend>    
+                   
+                     <p align="center">
+                      <label for="tiporub">Tipo Rubrica:</label>
+                         <select name="tiporub" >
+                            <option value="D">débito</option>
+                           <option value="C">crédito</option>
+                            </select>
+                      
+                     </p>                   
+                     <p align="center">
+                        <label for="rubrica">Nome:</label>
+                        <input type="text" id="rubrica" placeholder="rubrica" required="required" name="rubrica" size="50" maxlength="50" />
+                      </p>
+                     <p>
+                        <input type="submit" onclick="Enviar();" value="Enviar" />
+
+                        <input type="reset" value="Cancelar" /> 
+                        
+                    </p>
+
+                </form>
+</fieldset>
+            </div>
+        
+    </body>
+</html>

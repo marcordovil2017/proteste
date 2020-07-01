@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>ESCOLAR - Siatema Acadêmico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+         </head>
+    <body>
+        
+            <div id="formturmalu">
+                
+                <form name="meu_form" >
+                     <br>
+                       <h2>Notas dos Alunos</h2>
+                                            
+                       <p align="left">
+                       <fieldset>
+                   <legend>Informe as Notas dos Alunos </legend>
+                        <label for="codturma">Turma:</label>
+                         <select name="codturma" >
+                            <option value="01">Tma001</option>
+                            <option value="02">Tma002</option>
+                            <option value="03">Tma003</option>
+                            <option value="01">Tta001</option>
+                            <option value="02">Tta002</option>
+                            <option value="02">Tno001</option>
+                            <option value="02">Tno002</option>
+                        </select>
+                        <br>
+                     <p align="center">
+                        <label for="matricula">Aluno</label>
+                         <select name="matricula" >
+                            <option value="01">Ana carla</option>
+                            <option value="02">Beatriz Jradim</option>
+                            <option value="03">Carlos Silva</option>
+                            <option value="01">Dario</option>
+                            <option value="02">Marco Aurelio</option>
+                            <option value="02">Willian</option>
+                           
+                        </select>
+                        
+                  
+                     
+                      <p align="center">
+                        <label for="iddisc">Disciplina:</label>
+                         <select name="iddisc" >
+                            <option value="01">Biologia</option>
+                            <option value="02">Português</option>
+                            <option value="03">Geografia</option>
+                            <option value="01">História</option>
+                            <option value="02">Ingles</option>
+                            <option value="02">Informática</option>
+                           
+                        </select>  
+                          
+                        <p align="center">
+                        <label for="noaval">Tipo Avaliação</label>
+                         <select name="noaval" >
+                            <option value="01">1a. avaliação</option>
+                            <option value="02">2a. avaliação</option>
+                            <option value="03">Recuperação</option>
+                            <option value="01">Final</option>
+                                                     
+                        </select> 
+                        
+                       <p align="center">
+                        <label for="nota">Nota:</label>
+                        <input id="nota" name="nota" type="number">     
+                    </p>   
+                          <p>
+                              
+                        <h3>Observações sobre a nota do aluno </h3>
+                        <textarea  id="obsaloc" cols="70" rows="3" placeholder="Informe observações"></textarea>
+                                     <p>
+                        <input type="submit" onclick="Enviar();" value="Enviar" />
+
+                        <input type="reset" value="Cancelar" /> 
+                        
+                    </p>
+             </fieldset>
+                </form>
+            </div>
+        
+    </body>
+</html>
